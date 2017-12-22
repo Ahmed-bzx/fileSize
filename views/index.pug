@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 FreeCodeCamp API Projects - Timestamp Microservice
+  form(action="/upload", method="POST", enctype='multipart/form-data')
+    label Please choose a file, then click submit to see its size.
+    br
+    br
+    input(type="file", name="file")
+    button(type="submit" name="submit") Submit
